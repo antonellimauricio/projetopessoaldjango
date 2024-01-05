@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subsetor - {{ subsetor_nome }}</title>
+</head>
+<body>
+    <h1>Subsetor - {{ subsetor_nome }}</h1>
+    <!-- Exiba informações do subsetor ou o que for necessário -->
+    <a href="{{ url_for('cadastrar_cliente', subsetor_nome=subsetor_nome) }}">Cadastrar Cliente</a>
+</body>
+</html>

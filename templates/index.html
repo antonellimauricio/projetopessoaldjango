@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+</head>
+<body>
+    <h1>Setores</h1>
+    <ul>
+        {% for setor in setores %}
+            <li><a href="{{ url_for('subsetor', subsetor_nome=setor.nome) }}">{{ setor.nome }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
